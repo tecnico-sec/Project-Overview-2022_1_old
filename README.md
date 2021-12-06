@@ -2,278 +2,148 @@ Instituto Superior Técnico, Universidade de Lisboa
 
 **Network and Computer Security**
 
-# Project Overview
+# Project Topics
 
-This document describes the organization of the project for the Network and Computer Security / Segurança Informática em Redes e Sistemas (SIRS) course.
-
-The document concludes with a calendar containing all the deadlines.
-
-For any questions regarding this document, please contact:  
-[meic-sirs@disciplinas.tecnico.ulisboa.pt](mailto:meic-sirs@disciplinas.tecnico.ulisboa.pt)
-
-# 1. Introduction
-
-The SIRS (Network and Computer Security) course requires a practical project dealing with security solutions.  
-The whole process is organized in 10 sequential stages:
-
-| **Stage**                                                       |
-| ----------------------------------------------------------------|
-| [1. Assemble team](#21-assemble-team)                           |
-| [2. Pick topic](#22-pick-topic)                                 |
-| [3. Write proposal](#23-write-proposal)                         |
-| [4. Await approval](#24-await-approval)                         |
-| [5. Develop project](#25-develop-project)                       |
-| [6. Prepare demonstration](#26-prepare-demonstration)           |
-| [7. Write report](#27-write-report)                             |
-| [8. Submit code and report](#28-submit-code-and-report)         |
-| [9. Check presentation session](#29-check-presentation-session) |
-| [10. Present and defend](#210-present-and-defend)               |  
-
-<br />
-
-# 2. Stages
-
-Each stage is described in the following sections.
-
-## 2.1. Assemble team
-
-Assemble a team of 3 students, committed to work together.  
-Inform the lab professor of the group members.
-
-## 2.2. Pick topic
-
-The topics for the project are described in another document, which will be posted on the web site.
-
-Read the scenarios descriptions and, as a group, sort the topics by preference for doing your work.
-Apply for a topic when the selection page opens.
-Each group should be represented by one student only.
-
-In the selection form, identify your group as `CXX`, where `C` is replaced by A(lameda) or T(aguspark) and `XX` is replaced by the two digits of your group number, as assigned by Fénix.
-For example, group 22 of Taguspark is T22 and group 7 of Alameda is A07.
-
-Also in the form, sort all the topics by order of preference.
-Number 1 will be your most preferred topic.
-
-There are limited vacancies per project topic and slots will be assigned on a _first-come-first-served_ basis.
-
-IMPORTANT: check the deadlines table for the topic selection opening and closing dates.
-
-The official topic selection list will be posted after the process is concluded, to confirm the topic assigned to each group.
-
-## 2.3. Write proposal
-
-After having a topic assigned, your group should prepare a proposal document.
-The project proposal should describe the problem and the proposed solution.
-
-Please bring a draft of the proposal to your lab session or office hours to present it and receive feedback.  
-
-### 2.3.1. Technical requirements
-
-The planned project will need to have, _at least_:
-
-- a set of separate (virtual) machines, with network isolation;
-- a secure communication tunnel (e.g. TLS, SSH) using correct configuration;
-- the design and deployment of one mechanism using a custom security protocol.
-
-### 2.3.2. Versions
-
-The proposal should describe three versions of the work: _basic_, _intermediate_ and _advanced_.  
-The basic version is the minimum security functionality.  
-The intermediate version includes the most important security mechanisms.  
-The advanced version addresses a wider range of attacks.
-
-### 2.3.3. Document requirements
-
-- PDF format;
-- Mandatory file name `CXX_WWW_HHMM_L_proposal.pdf`
-(where `C` is A for Alameda, T for Tagus, `XX` is the Fenix group number with two digits, `WWW` is the weekday of the lab shift – Mon, Tue, Wed, Thu, Fri – `HHMM` is the time – Hours and Minutes – and `L` is the lab room number);
-- Report cover: Project title. Headed by course name, group campus, group number.
-In the next row: group members sorted by ascending student number.
-For each student, include the number, name and professional photo;
-- Report body: The font should be no smaller than 11pt, with standard line and character spacing;
-- Limit 4 pages (excluding cover);
-- Pages should be numbered (preferably with a label like `Page X of Y`);
-- The use of diagrams (such as UML) is recommended for clear and concise communication.
-
-### 2.3.4. Document structure (mandatory)
-
-1. Problem  
-_Given the chosen scenario, where is security necessary?_  
-_What is the main problem being solved?_  
-Use around 200 words.  
-  1.1. Requirements  
-  _Which security requirements were identified for the solution?_  
-  Present as a list.  
-  1.2. Trust assumptions  
-  _Who will be fully trusted, partially trusted, or untrusted?_  
-  Write down the trust relationships to make them explicit.  
-2. Proposed solution  
-  2.1. Overview  
-  Diagram and explanation with at most 200 words.  
-  2.2. Deployment  
-  Describe distinct machines and how they will be interconnected.  
-  2.3. Secure channel(s) to configure  
-  Identify communication entities.  
-  Choose existing TLS or SSH library/tool to use.
-  What keys will exist and how will they be distributed.  
-  2.4. Secure protocol(s) to develop  
-  _Who will communicate?_  
-  Identify communication entities and the messages they exchange with a sequence or collaboration diagram.  
-  Identify the security properties to ensure.  
-  Choose language for implementation.  
-  _What keys will exist and how will they be distributed?_  
-3. Plan  
-  3.1. Versions  
-  Describe basic, intermediate and advanced versions of the work and when are they expected to be achieved.  
-  3.2. Effort commitments  
-  Table containing one row per week until the submission date and one column per group member with expected activities for the given week.  
-  Some cells may be left blank because of work in other courses.  
-4. References  
-Tools, libraries, and other references that will be used in the project.  
-
-## 2.4. Await approval
-
-The proposal document will need to be approved by the course faculty.
-
-## 2.5. Develop project
-
-Develop basic, intermediate and advanced versions over the project weeks.
-
-Attend the lab sessions to present your ongoing development and receive early feedback from the professor.
-A security project that receives regular feedback can be improved earlier and is more likely to get a better grade.
-
-## 2.6. Prepare demonstration
-
-IMPORTANT: once your team achieves the intermediate version of the work, start preparing the demonstration.
-
-Write a `README` file with step-by-step instructions on how to run your project.
-Record screenshots, screencasts or similar artifacts showing your project in action.
-
-## 2.7. Write report
-
-The project final report should describe the problem and the implemented solution, along with a presentation of the results.
-The report document should update and extend the proposal document to reflect what was actually achieved.
-
-### 2.7.1. Document requirements
-
-- PDF format;
-- Mandatory file name `CXX_WWW_HHMM_L_report.pdf`;
-- Report cover;
-- Report body: The font should be no smaller than 11pt, with standard line and character spacing;
-- Limit of 5 pages (excluding cover), plus 2 pages for Annexes if necessary for reference materials;
-- Pages must be numbered (preferably with a label like `Page X of Y`).
-
-### 2.7.2. Document structure (mandatory)
-
-Same as the proposal, with the following differences:
-
-- All sections must be revised and updated;
-- Replace _Plan_ with _Results_: state what was actually achieved, with mention of strengths and weaknesses, and justification of implementation choices.
-
-## 2.8. Submit code and report
-
-Before the final deadline of the project, as stated in Section 3 of this document, submit an archive with all the developed code and resources, and the report document.
-
-IMPORTANT: the code archive and the report are submitted separately on the Fénix system.
-
-### 2.8.1. Code archive requirements
-
-- ZIP format - without compiled code, only source and build scripts;
-- The mandatory file name is `CXX_WWW_HHMM_L_solution.zip`;
-- README file, describing the required platform (e.g. Linux 64-bit, Ubuntu 18.04.1 LTS, Java 8u181) and setup instructions.
-Suggested [README template](https://gist.github.com/miguelpardal/36f6ef7864bfdeabe5c57b161aa80f2f);
-- All configuration files and scripts required to configure the solution on the specified platform;
-- All developed source code;
-- Existing tests and example files.
-
-## 2.9. Check presentation session
-
-The project presentations will occur on the dates following the submission deadline.  
-The presentation session calendar will be made available during the final days of the project.
-
-Each group is assigned to a session, in their respective campus, preferably in the time-slot of laboratory they are enrolled to.  
-If your group requires a change in the proposed slot, please contact faculty in advance.
-
-## 2.10. Present and defend
-
-Each group will have to attend the full presentation session where they will present.  
-The presentation slides must be in English and the presenters should also present in English.  
-For the discussion questions, students can answer in Portuguese.
-
-### 2.10.1. Presentation outline
-
-The presentations will be organized as follows:
-
-- 8 minutes for presentation of the work done, supported by slides, including a mandatory 2 minute live demo  
-(also prepare a video of the demo, as backup, just in case there is a technical problem);
-- 7 minutes for questions and answers.
-
-It is highly recommended that each presentation includes:
-
-- a slide with the general architecture;
-- a slide with the key distribution and management mechanism, when appropriate;
-- a slide with the general protocol/architecture.
-
-Each group member must participate and talk in the presentation, and be prepared to answer individual questions.
-
-If necessary, a more detailed discussion will be scheduled with each group.
-
-### 2.10.2. Presence
-
-The presentations are done by the whole group, in person, on campus.
-Each group must attend from the beginning of their assigned session and remain for the duration of it.
-
-
-
-### 2.10.3. Presentation archive requirements
-
-IMPORTANT: after making the presentation, you will have to submit the presentation and video on Fénix.
-
-- ZIP format;
-- The mandatory file name is `CXX_WWW_HHMM_L_presentation.zip`;
-- Presentation in PDF and also in source format (e.g. PowerPoint);
-- Text file containing link(s) to download the demo video and screenshots of the solution.
-The links must be valid for one month, at least.
-The video can also be published in YouTube or a similar platform.
-
-### 2.10.4 Grading
-
-The project grade will take into account:
-
-- Security design/rational (30%);
-- Security implementation (30%);
-- Report (20%);
-- Presentation (20%).
-
-# 3. Calendar
-
-The relevant dates for the project are shown in the following calendar.
-
-| **Stage**                  | **Deadline**                                                                      |
-| ---------------------------|-----------------------------------------------------------------------------------|
-| 1. Assemble team           | On the labs, before Friday, December 2nd, 2021 |
-| 2. Pick topic              | Topic list published: Monday, December 6th<br />Form opens: Thursday, December 9th, 13:00<br />**Closes: Friday, December 10th, 17:00** |
-| 3. Write proposal          | **Submit: Friday, December 17th, 17:00** |
-| 4. Await approval          | Week of December 20th |
-| 5. Develop project         | During the weeks of January 3rd - 10th - 17th, 2022, articulated with other coursework |
-| 6. Prepare demonstration   | Start preparing once you have the intermediate version of the work |
-| 7. Write report            | Update as you complete basic, intermediate and advanced versions |
-| 8. Submit code and report  | **Friday, January 21st, 17:00** |
-| 9. Check presentation session | Opens: Wednesday, January 19th<br />**Changes close: Friday, December 21st, 18:00** |
-| 10. Present and defend     | Sessions start Monday, January 24th |
+_Important note: the security aspects, both functional and assurance ones, are the essential points where you should focus your work and will be the main metrics to be considered in the grading. In the designed and proposed solutions, user interface concerns are secondary._
 
 ----
 
-## 3.1. Updates
+## 1. Web payments
 
-IMPORTANT: keep track of the course [web site](https://fenix.tecnico.ulisboa.pt/disciplinas/SIRS/2021-2022/1-semestre) for updates and links to online forms.
+Consider a _merchant website_ with areas of different access levels for anonymous users, registered users, and store administrators.
+The site must be secure against the threats like XSS and SQL injection and/or other attacks.
+The solution should consider all tiers explicitly, including: web, application, database.
+Remember that *tier* is a physical separation in the architecture whereas *layer* may be just a logical separation.
+The network topology should be adequately designed for protection with security in mind.
 
-If there are changes to this document, they can be consulted in the _Git Commit History_.
+The web site should allow Payment Initiation Services (PIS), inspired by the Europen Payment Services Directive (PSD2).
+These services help to initiate a payment from the consumer's account on a _bank_ to the merchant's account by creating an interface to bridge both accounts, filling in the information needed for the bank transfer (amount of the transaction, account number, message) and informing the store of the transaction.
 
-## 3.2. Final words
+**Suggested references:**
 
-We wish you all the best in this technical venture!  
-Make the most of it and ask for our feedback as much as possible.
+- <https://en.wikipedia.org/wiki/Payment_Services_Directive>
+- <https://www.bportugal.pt/en/page/payment-services-under-psd2>
+
+----
+
+## 2. Smartphone as a security token
+
+The smartphone is an indispensable digital companion for many people in their daily lives.
+This work should leverage its _proximity_ to the user as part of an increased security solution.
+
+The smartphone can be used in new ways for:
+- _Authentication_ - for example, the user should have the phone with himself to answer an authentication challenge posed by a web application to perform two-factor authentication;
+the phone can also make use of existing _biometric_ sensors;
+- _Authorization_ - for example, the user should confirm on the phone an access to an important resource in a web application;
+- _Delegation_ - the user can grant temporary permissions to a nearby user, using a protocol over Wi-Fi, Bluetooth, NFC, or QR Codes.
+
+In all of the examples above, the solution should be designed with a good balance between security and usability, with special consideration for the _pairing_ of devices and for the regular interaction.
+The security solution to propose will have to be implemented in a working prototype, running in a mobile operating system, suitable for demonstration of the capabilities.
+
+**Suggested references:**
+
+- [Duo SDK](https://duo.com/product/every-application/supported-applications/apis) -- two-factor authentication API _(there are others)_
+- [KeePass Plugins](https://keepass.info/help/v2/plugins.html) -- open-source password vault
+- [Bitwarden](https://github.com/bitwarden) -- open-source password manager
+
+----
+
+## 3. Remote document access with ransomware protection
+
+Collaborative applications allow groups of users to create and edit documents remotely.
+These documents are regularly synchronized between personal devices and the remote servers.
+In these applications, a user, owner of the document, can select contributors which have access to the document.
+Documents should not be accessed by unauthorized parties.
+If an attacker accesses the servers storing the documents he must not be able to view the documents and if he tries to edit any document, there must be a way to detect the illegal modifications.
+
+A _ransomware attack_ happens when a system is breached and the attacker encrypts the user files and asks for a ransom to provide the decryption key.
+If properly implemented, recovering the files without the decryption key is an intractable problem.
+Also, the identification of the attackers can be difficult with the use of cryptocurrencies like BitCoin.  
+Organizations must have backups, with version history, to allow recovery in the case of ransomware attacks.
+
+In this topic, the solution should allow documents to be shared over a public network in a secure fashion.
+It should allow authenticated users to access local and remote files in a transparent way.
+Data confidentiality must be assured even in the case where an attacker gains physical access to the data storage devices.
+Illegal modification of the documents by unauthorized users must be detected.
+The document system should resist ransomware attacks.
+
+**Suggested references:**
+
+- [Nextcloud](https://github.com/nextcloud) -- client-server software for creating and using file hosting services
+- [Syncthing](https://docs.syncthing.net/) -- file synchronization tool
+
+----
+
+## 4. Proofs of location for smart cars
+
+Future autonomous vehicles will need to support several cooperative services to achieve _safety_ and _security_ on real life scenarios.
+The vehicles will need to use not only their own sensors but share and use sensor data from others, achieving _Collective Perception Services_.
+This will ensure that data will arrive ahead of its needs and that safety standards are attained.
+For example, the vehicle could be equipped with Bluetooth or Wi-Fi and use signal detection to ``see'' pedestrians and bycicles that could, otherwise, remain unseen.
+
+One of the needed services will be vehicles location: each vehicle will need to proof their own location, using sensors but also using data from other witnesses.
+Passing cars or another road infrastructure can be used for that purpose.
+For example, to prove the presence at a parking spot or at a charging station.
+
+We suggest that the following terminology is used:
+a _prover_ makes a claim of location at a specific time with self-collected evidence;
+a _witness_ endorses the claim and add its own evidence;
+the _verifier_ analyzes all the available evidence and makes a decision to accept the claim, or not.
+
+In this project, you should use one of the proposed simulators, or another one that you consider appropriate to the context, to implement a simulated system of proof of location for vehicles (cars) using IEEE 802.11p and IEEE 1609.4 DSRC/WAVE network layers on a highway.
+You can also consider the use of Road Side Units (RSU).
+
+**Suggested references:**
+
+- [SureThing Core Data](https://github.com/inesc-id/SureThing_Core_Data) -- Example location proof data definitions in Protobuf format
+- [Survey of the Connected Vehicles](https://ieeexplore.ieee.org/abstract/document/8058008)
+  - [SUMO](https://www.eclipse.org/sumo/) -- Simulation of Urban MObility
+  - [CARLA](https://carla.org/) -- Open-source simulator for autonomous driving research.
+  - [Veins](https://veins.car2x.org/features/) -- The open source vehicular network simulation framework.
+  - [OMNeT++](https://omnetpp.org/) -- Discrete Event Simulator
+
+----
+
+## 5. Contact tracing
+
+In this topic, we consider device tracking using their hardware identifiers.
+Each mobile device has one or more hardware identifiers that are broadcast in local networks, namely the Wi-Fi adapter MAC addresses.
+The same happens with Bluetooth.
+A typical system architecture has a data aggregation server (on the cloud), a set of scan servers that send periodic reports of sighted devices, and a query client.
+Keeping record of these identifiers and associating them with users can help track the iteration between devices and their users, but can also become a severe privacy violation as we can know of a user's whereabouts and daily routines.
+
+The goal of the scenario is to develop a service for smartphones to assess the interaction between devices/people in order to track potential COVID-19 contamination, while maintaining the _privacy_ of the users.
+The system should allow:  
+i) the device owner to inform others that he is infected (using a code given by the health authority) or  
+ii) to be informed that he was in contact with someone infected.  
+In case of ii) the user should be able to get the information where this contact occurred and for how long.
+
+**Suggested references:**
+
+- [D3PT](https://github.com/DP-3T/documents) -- Decentralized Privacy-Preserving Proximity Tracing
+- [Apple and Google Privacy-Preserving Contact Tracing](https://covid19.apple.com/contacttracing) -- joint documentation from the two leading smartphone OS providers
+
+----
+
+## 6. Medical test records
+
+Health care institutions gather and store sensitive information from patients.
+The information systems should allow fine-grained and contextualized access to the records to the relevant staff, like Doctors and Nurses.
+Other staff with different data access needs include: clinical assistants (take care of ward housekeeping), patient services assistants (bring meals and drinks), porters (take care of patient lifting and transport), volunteers (help with fundraising and ward visits), and ward clerks (staff the ward reception desks).
+
+One of the relevant types of data stored are _test results_.
+Some of the medical tests can be performed inside a _hospital lab_, but in many cases, tests are done in _partner labs_, that have a distinct infrastructure, remote from the infrastructure of the hospital, that need to be interconnected.
+Also, the medical test data has to be archived in a way such that its authenticity can be verified later, if necessary.
+
+It is mandatory that the solution externalizes the security policy with a policy language, like XACML, with separate policy authoring and enforcement points, and different parts of the patient record can be accessed by different people and in different contexts.  
+To demonstrate the advantage of this separation, the solution should have a _Normal_ mode of operation and a _Pandemic_ mode, where the rules for data access are significantly different.
+The switch between modes should be done with changes to the policy documents but without changes to the application code.
+
+**Suggested references:**
+
+- [RFC2753](https://tools.ietf.org/html/rfc2753) -- Framework for Policy-based Admission Control
+- [XACML](https://www.oasis-open.org/committees/tc_home.php?wg_abbrev=xacml#other) -- security policy language _(there are other languages)_
+  - [XACML library](https://github.com/wso2/balana) -- example XACML implementation _(there are other libraries)_
 
 ----
 
